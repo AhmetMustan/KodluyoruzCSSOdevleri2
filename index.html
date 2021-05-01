@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css"> <!-- Css dosyamızı eklemek için gerekli -->
+</head>
+<body>
+    <nav>
+        <div id="üstpanel"> <!-- En yukardaki yazıları yazabilmek için bir blok oluşturduk. -->
+            <div id="sağ"> <!-- Bu blok ikiye bölünüyor bu sağdaki -->
+                <div id="sağ1"> <!-- Bu da kendi içinde ikiye bölünüyor bu da içerdeki sağdaki yani fotoğraf.Soldan sonuncu. -->
+                    <a href="https://about.google/intl/tr/products/">
+                        <img src="images/appsbutton.svg" alt="Ürünler-resim" width="24px" height="24px" >
+                    </a>
+                </div>
+                <div id="sağ2"> <!-- İkiye bölünen sağdaki bloğun içindeki soldaki blok yani 9 noktalı image. Soldan üçüncü -->
+                    <a href="https://mail.google.com/mail">
+                        <img id="img1" src="images/resim.jpg" alt="Profil-Foto" width="30px" height="30px"></a>
+                </div>
+            </div>
+            <div id="sol"> <!-- İkiye bölünen ana bloğun soldaki bloğu -->
+                <div id="sol1"><!-- içinde ikiye bölünüyor ve bu soldaki. Soldan birinci. -->
+                    <a class="linkler" href="https://mail.google.com/mail">Gmail</a>
+                </div>
+                <div id="sol2">
+                    <!-- İçinde ikiye bölündükten sonraki sağdaki. Soldan ikinci. -->
+                        <a class="linkler" href="https://images.google.com/imghp?hl=en&gl=ar&gws_rd=ssl">Images</a>
+               </div>
+            </div>
+        </div>
+    </nav>
+    <div id="boşluk"> <!-- Resim ile üst panel arasına boşluk koymak -->
+    </div> 
+        <div class="resim"> <!-- Google resmni eklediğimiz blok. -->
+            <img src="images/logo.png" alt="Google!">
+        </div>
+        <div id="arama-çubuğu"> <!-- Altındaki arama çubuğunun oluşacağı blok -->
+            <input id="aramaçubuğu" type="text" size="90px"> <!--İnput ile arama çubuğunu somutlaştırdık.Yani bir çerçeve oluşturduk.-->
+        </div>
+        <div id="boşluk1"><!-- Arama Çubuğu ile butonlar arasına boşluk koymak -->
+        </div>
+        <div id="butonkutu"> <!-- Butonların duracağı blok -->
+            <table> <!-- Butonları tablo ile oluşturmayı tercih ettim. -->
+                <input class="buton" type="button" value="Google Arama"> <!-- İlk buton -->
+                <input class="buton" type="button" value="Kendimi Şanslı Hissediyorum"> <!-- İkinci buton-->
+            </table>
+        </div>
+       <div id="boşluk2"> <!-- butonlar ile footer arası boşluk koymak için kullanılıyor -->
+       </div>
+     <footer id="footer"> <!-- En alt kısım için oluşturulmuş blok -->
+        <div>
+            <!-- İkiye bölüneceği için oluşturulmuş buton -->
+            <div class="footersolbuton"> <!-- İkiye böldük ve sol taraftakiler için gerekli blok -->
+                <a class="altlink" href="https://ads.google.com/intl/tr_tr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                Reklam</a>
+            </div>
+            <div class="footersolbuton">
+                <a class="altlink" href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Hakkında
+                </a>
+            </div>
+            <div class="footersolbuton">
+                <a class="altlink" href="https://smallbusiness.withgoogle.com/intl/tr_tr/?subid=tr-tr-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=tr-tr-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">
+                    İşletme</a>
+            </div>
+            <div class="footersolbuton">
+                <a class="altlink" href="https://www.google.com/search/howsearchworks/?fg=1">
+                    Arama Nasıl Çalışır?</a>          
+            </div>
+        </div> <!-- Buraya kadar olanlar ana bloğun sol tarafında kalacaklar içindi. -->
+        <div> <!-- Burası da sağ taraf için -->
+            <div class="footersağbuton">
+                <a class="altlink" href="https://policies.google.com/privacy?hl=tr&fg=1">
+                    Gizlilik</a>
+            </div>
+            <div class="footersağbuton">
+                <a class="altlink" href="https://policies.google.com/terms?hl=tr&fg=1">
+                    Şartlar</a>
+            </div>
+            <div class="footersağbuton">
+                <a class="altlink" href="https://www.google.com/preferences?hl=tr&fg=1">
+                    Ayarlar</a>
+            </div>
+        </div> <!-- Sağ taraf olanlar bitti -->
+    </footer> <!-- Footer bitti -->
+</body>
+</html>
+<!-- Html dosyası sonu -->

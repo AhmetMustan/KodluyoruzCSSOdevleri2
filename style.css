@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+} /* Kenarda boşluklar olmasın diye */
+a.linkler:link {
+    color: black;
+    text-decoration: none;
+} /* Linklerin rengi default kalmasın siyah olsun diye,"Tüm linkler" */
+a.linkler:visited{
+    color: black;
+} /* Linke tıklandıktan sonra yazıların rengi siyah kalsın."Tüm linkler"*/
+a.linkler:hover{
+    text-decoration: underline;
+    color: black;
+}
+/* Mouse üstüne geldiğinde alt çizgisi siyah çıksın."Tüm linkler" */
+a.linkler:active{
+    color: red;
+}/* Yazıya tıklandığı anda rengi kırmızı olsun."Tüm linkler" */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+
+#üstpanel {
+    padding-top: 15px;
+    padding-right: 15px;
+    text-align: right;
+} 
+/* blok içinden girinti olsun diye padding. Yazıyı sağa yaslı yazsın diye right."Üst blok" */
+#sol {
+    margin-right: 40px;
+    float: right;
+    font-size: 17px;
+} /* Sağ blok ile arasında mesafe olsun diye margin.Sağa yaslı olsun diye right.Yazı boyutu 17px."Üst blok" */
+#sol1 {
+    float: left;
+    margin-right: 10px;
+} /* Sol tarafın solu sola yaslı olsun ve sağ tarftaki blok ile arasında 10 px olsun. Burada düzeni deneme yanılma ile yaptım.Ters oldu. */
+#sol2{
+    float: right;
+    margin-left: 10px;
+} /* Sol1 ile aynı mantık. Deneme yanılma ile yaptım ters oldu ama doğru görünüyor.*/
+#sağ{
+    float: right;
+}
+#sağ1{
+    float: left;
+    margin-right: 10px;
+}
+#sağ2 {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+} /* Sol1 ve sol2 ile aynı mantıkla yapıldı. sağ/sağ1,sağ2 için */
+#img1{
+    border-radius: 10px;
+} /* Profil fotosunun etrafı oval olsun */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+
+.resim {
+    text-align: center;
+    margin-bottom: 30px;
+} /* Google resmi sayfanın ortasında olsun diye center ve alt bloklar ile arsında boşluk olsun diye margin-bottom */
+#boşluk{
+    clear: both;
+    height: 90px;
+} /* Üst blok ile google resmi arasında boşluk olması için oluşturuldu. */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+
+#arama-çubuğu{
+    text-align: center;
+} /* Arama çubuğunun olduğ blok sayfanın ortasında olsun diye center kullanıldı. */
+#aramaçubuğu{
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    z-index: 3;
+    height: 40px;
+    margin: 0 auto;
+    width: 480px;
+} /* Arama çubuğunun özellikleri.  */
+#aramaçubuğu:hover{
+    box-shadow: 2px 5px 8px 0px rgba(144, 146, 146, 0.82);
+}/* Arama çubuğunun üstüne mouse ile gelindiğinde gölge oluşsun */
+input#aramaçubuğu:focus {
+    outline: 0;
+} /* Arama çubuğunun oluşturulduğu input çerçevesi tıklandığında gelmesin */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+
+#boşluk1{
+    clear: both;
+    height: 20px;
+} /* Arama çubuğu ile butonlar arasında boşluk olsun ve yazılar yan yana gelmesin */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+
+#butonkutu{
+    text-align: center;
+    height: 80px;
+    width: 100%;
+} /* Butonların duracapı bloğun özellikleri. Ortada olsun diye center. */
+.buton{
+    margin-right: 30px;
+    height: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #5F6368;
+    font-size: 14px; 
+    font-family: arial;
+    border-width: 1px;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+}/* Butonların tüm özellikleri */
+.buton:hover{
+    border-color: #5f6368;
+} /* Butonun üstüne mouse ile gelindiğinde çerçeve oluşsun */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+
+#boşluk2{
+    clear: both;
+    height: 292px;
+} /* Footer ile butonlar arası boşluk olsun */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+
+#footer{
+    height: 50px;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+} /* Footer bloğunun özellikleri */
+.footersolbuton{
+    float: left;
+    margin: 16px;
+} /* Footer sol bloktaki linkler sola dayalı olsun, Footer içindeki sol taraftaki butonların arasındaki mesafe  */  
+.footersağbuton{
+    float: right;
+    margin: 16px;
+} /* Footer sağ bloktaki linkler sağa dayalı olsun, Footer içindeki sağ taraftaki butonların arasındaki mesafe  */
+.altlink{
+    font-family: arial,sans-serif;
+    font-size: 14px;
+} /* Footer içindeki linklerin boyutu ve yazı tipi */
+a.altlink:link {
+    color:#5a5e63;
+    text-decoration: none;
+} /* Footer içindeki link altı çizili olmasın ve rengi */
+a.altlink:visited{
+    color: #5a5e63;
+} /* Footer içindeki linklerin rengi ziyaret edildikten sonra default olmasın ve rengi koddaki renk olsun */
+a.altlink:hover{
+    text-decoration: underline;
+    color:#5f6368;
+} /* Footer içindeki linklerin üstüne mouse ile gelince altı çizili olsun yazılanlar */
+a.altlink:active{
+    color: red;
+} /* Linke tıklandığı anda rengi kırmızı olsun */
+
+/* ******************************************************************************************************** */
+/* ******************************************************************************************************* */
+/* Css dosyası sonu */
